@@ -16,3 +16,10 @@ To manually patch the XP x64 uxtheme.dll, in binary editor of your choice edit t
 <img width="1265" height="614" alt="lunas1" src="https://github.com/user-attachments/assets/0fedcf32-6acf-43c6-9eb9-c014254abd18" />
 <img width="1920" height="1080" alt="lunas2" src="https://github.com/user-attachments/assets/a5622069-0d3b-41f1-a962-3c831c412e8a" />
 <img width="1920" height="1080" alt="lunas3" src="https://github.com/user-attachments/assets/87bae93b-3b5d-4a6d-b933-b703c0d3222a" />
+
+Example of Dark theme aware application on Windows XP, loading system dark theme settings automatically - Supermium Browser v144:
+
+<img width="1920" height="1080" alt="lunas4" src="https://github.com/user-attachments/assets/d207b828-e652-474b-9191-01cd02936a06" />
+<img width="1920" height="1080" alt="lunas5" src="https://github.com/user-attachments/assets/d7d314f9-70d6-4875-b719-66cf087a27bb" />
+<img width="1920" height="1080" alt="lunas6" src="https://github.com/user-attachments/assets/826d123b-1909-49ed-9b25-3207cf267e58" />
+<img width="1920" height="1080" alt="lunas7" src="https://github.com/user-attachments/assets/7dadd3b1-5fb2-46e9-a233-f7a645eaf5f0" />
