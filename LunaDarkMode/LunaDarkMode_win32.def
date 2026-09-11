@@ -1,0 +1,17 @@
+LIBRARY "LunaDarkMode"
+EXPORTS
+    LunaShouldAppsUseDarkMode=_LunaShouldAppsUseDarkMode@0
+    LunaShouldSystemUseDarkMode=_LunaShouldSystemUseDarkMode@0
+    LunaGetDarkModePreference=_LunaGetDarkModePreference@8
+    LunaSetDarkModePreference=_LunaSetDarkModePreference@8
+    LunaSetPreferredAppMode=_LunaSetPreferredAppMode@4
+    LunaAllowDarkModeForWindow=_LunaAllowDarkModeForWindow@8
+    LunaIsDarkModeAllowedForWindow=_LunaIsDarkModeAllowedForWindow@4
+    LunaRefreshDarkModePolicy=_LunaRefreshDarkModePolicy@0
+
+    RefreshImmersiveColorPolicyState=_RefreshImmersiveColorPolicyState@0 @104
+    ShouldAppsUseDarkMode=_ShouldAppsUseDarkMode@0 @132
+    AllowDarkModeForWindow=_AllowDarkModeForWindow@8 @133
+    SetPreferredAppMode=_SetPreferredAppMode@4 @135
+    IsDarkModeAllowedForWindow=_IsDarkModeAllowedForWindow@4 @137
+    ShouldSystemUseDarkMode=_ShouldSystemUseDarkMode@0 @138

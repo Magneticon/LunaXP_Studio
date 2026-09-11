@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32"><Configuration>Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32"><Configuration>Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D795D768-C7EC-4A32-A5AF-5B35E6681C90}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LunaXPStudio</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>LunaXPStudio</TargetName><UseDebugLibraries>true</UseDebugLibraries><CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>LunaXPStudio</TargetName><UseDebugLibraries>false</UseDebugLibraries><WholeProgramOptimization>true</WholeProgramOptimization><CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>LunaXPStudio</TargetName><UseDebugLibraries>true</UseDebugLibraries><CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>LunaXPStudio</TargetName><UseDebugLibraries>false</UseDebugLibraries><WholeProgramOptimization>true</WholeProgramOptimization><CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile><WarningLevel>Level4</WarningLevel><Optimization>Disabled</Optimization><RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary><PreprocessorDefinitions>WIN32;_DEBUG;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions></ClCompile>
+    <Link><SubSystem>Windows</SubSystem><AdditionalOptions>/SUBSYSTEM:WINDOWS,5.01 %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>comdlg32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile><WarningLevel>Level4</WarningLevel><Optimization>MaxSpeed</Optimization><FunctionLevelLinking>true</FunctionLevelLinking><IntrinsicFunctions>true</IntrinsicFunctions><RuntimeLibrary>MultiThreaded</RuntimeLibrary><PreprocessorDefinitions>WIN32;NDEBUG;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions></ClCompile>
+    <Link><SubSystem>Windows</SubSystem><EnableCOMDATFolding>true</EnableCOMDATFolding><OptimizeReferences>true</OptimizeReferences><AdditionalOptions>/SUBSYSTEM:WINDOWS,5.01 %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>comdlg32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile><WarningLevel>Level4</WarningLevel><Optimization>Disabled</Optimization><RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary><PreprocessorDefinitions>_DEBUG;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions></ClCompile>
+    <Link><SubSystem>Windows</SubSystem><AdditionalOptions>/SUBSYSTEM:WINDOWS,5.02 %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>comdlg32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies></Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile><WarningLevel>Level4</WarningLevel><Optimization>MaxSpeed</Optimization><FunctionLevelLinking>true</FunctionLevelLinking><IntrinsicFunctions>true</IntrinsicFunctions><RuntimeLibrary>MultiThreaded</RuntimeLibrary><PreprocessorDefinitions>NDEBUG;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions></ClCompile>
+    <Link><SubSystem>Windows</SubSystem><EnableCOMDATFolding>true</EnableCOMDATFolding><OptimizeReferences>true</OptimizeReferences><AdditionalOptions>/SUBSYSTEM:WINDOWS,5.02 %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>comdlg32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies></Link>
+  </ItemDefinitionGroup>
+
+  <ItemGroup>
+    <ClCompile Include="src\LunaXPStudioMain.cpp" />
+    <ClCompile Include="src\ThemeGenerator.cpp" />
+    <ClCompile Include="src\ResourceProbe.cpp" />
+    <ClCompile Include="src\LunaIni.cpp" />
+    <ClCompile Include="src\LunaMapper.cpp" />
+    <ClCompile Include="src\LunaSchema.cpp" />
+    <ClCompile Include="src\BitmapEngine.cpp" />
+    <ClCompile Include="src\ResourceUpdater.cpp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClInclude Include="src\ThemeGenerator.h" />
+    <ClInclude Include="src\ResourceProbe.h" />
+    <ClInclude Include="src\LunaIni.h" />
+    <ClInclude Include="src\LunaMapper.h" />
+    <ClInclude Include="src\LunaSchema.h" />
+    <ClInclude Include="src\BitmapEngine.h" />
+    <ClInclude Include="src\ResourceUpdater.h" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ResourceCompile Include="LunaXPStudio.rc" />
+    <None Include="res_fairy.png" />
+    <None Include="res_fairy_square.png" />
+    <None Include="LunaXPStudio.ico" />
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
