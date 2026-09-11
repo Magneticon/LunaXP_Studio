@@ -1,4 +1,4 @@
-# LunaXP_Studio
+# LunaXP Studio
 Comprehensive Luna Theme Designer for Windows XP / XP x64
 
 Allows you to easily edit Luna theme styles for Windows XP / XP x64. You can easily recolor the Luna theme, expanding the Luna options beyond stock Blue, Homestead and Metallic themes.
